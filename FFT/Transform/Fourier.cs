@@ -30,9 +30,9 @@ namespace FourierTransform
         /// <returns>Array contendo os valores transformados.</returns>
         public Complex[] Calculate(Complex[] quantity)
         {
-            Complex[] resultArray = new Complex[quantity.Length];
-
             int quantityLength = quantity.Length;
+
+            Complex[] resultArray = new Complex[quantityLength];
 
             // Calcula os fatores para cada índice do array.
             Complex[] factors = this.CalculateFactors(quantityLength);
